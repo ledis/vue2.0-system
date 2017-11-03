@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; }
+table {border-collapse: collapse; border-spacing: 0; table-layout:fixed;}
+fieldset,img {border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal; font-style: normal;}
+ol,ul ,li{list-style: none;}
+a{color:#666;text-decoration:none;-webkit-transition:All 0.2s ease-in-out;-moz-transition:All 0.2s ease-in-out;-o-transition:All 0.2s ease-in-out;transition:All 0.2s ease-in-out;}
+a{-webkit-tap-highlight-color: transparent;  -webkit-touch-callout: none;  -webkit-user-select: none;}
+img,input{border:0 none;}
+-webkit-text-size-adjust:none; 
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size:100%;}
+input,textarea{outline:none;}
+input:focus,textarea:focus,select:focus{outline:none;}
+:-moz-placeholder { 
+    color: #c3c3c3;  
+}
+
+::-moz-placeholder { 
+    color: #c3c3c3; 
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #c3c3c3;  
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c3c3c3; 
+}
+/*去除苹果浏览器的默认值*/
+/*IOS设备下默认圆角*/
+input[type="button"],input[type="date"],input[type="submit"],input[type="reset"],select,textarea{-webkit-appearance:none;
+border-radius:0;border:none;}
+/*chrome 滚动条*/
+::-webkit-scrollbar{width: 6px;height:6px;}
+::-webkit-scrollbar-button{display:none;}
+::-webkit-scrollbar-track{background-color:black;border-radius: 6px;}
+::-webkit-scrollbar-track-piece{background-color: #F5F5F5;}
+::-webkit-scrollbar-thumb{margin-right:10px; background-color: #999;border-radius: 6px;}
+::-webkit-scrollbar-thumb:vertical{height: 6px;}
+
+::-webkit-scrollbar-corner{background-color:#F5F5F5;}
+::-webkit-scrollbar-resizer{background-color:#F5F5F5;}
+*{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+html{/*解决默认tap事件点击的时候背景高亮问题*/-webkit-tap-highlight-color:transparent;}
+body{ font-size:62.5%;font-family:"Microsoft yahei","微软雅黑",Arial,Helvetica,sans-serif,"宋体";}
+.clear{clear:both;}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;}
+em{font-style:normal}
+.hide{display:none;}
+html,body,#app,.wrapper{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+.el-upload--text em, .plugins-tips a{
+	color:#20a0ff;
+}
+/*vue-Edit*/
+.ql-container{
+    min-height: 400px;
+}
